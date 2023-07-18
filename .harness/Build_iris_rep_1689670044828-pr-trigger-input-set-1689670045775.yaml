@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_iris_rep_1689670044828-pr-trigger-input-set
+  identifier: Build_iris_rep_1689670044828prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: HCG_IRIS
+  pipeline:
+    identifier: Build_iris_rep_1689670044828
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>

@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_iris_rep_1689670044828-push-trigger-input-set
+  identifier: Build_iris_rep_1689670044828pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: HCG_IRIS
+  pipeline:
+    identifier: Build_iris_rep_1689670044828
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>

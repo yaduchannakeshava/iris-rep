@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_iris_rep_1689670044828
+  name: Build iris-rep
+  orgIdentifier: default
+  projectIdentifier: HCG_IRIS
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github
+        repoName: yaduchannakeshava/iris-rep
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI

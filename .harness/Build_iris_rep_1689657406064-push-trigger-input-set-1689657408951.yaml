@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_iris_rep_1689657406064-push-trigger-input-set
+  identifier: Build_iris_rep_1689657406064pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: iris_test
+  pipeline:
+    identifier: Build_iris_rep_1689657406064
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
